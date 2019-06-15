@@ -33,7 +33,7 @@ details.
  
 Ntrip Version 1.0 is an RTCM standard for streaming GNSS data over
 the Internet. Offering the Standard NtripCaster Version 0.1.5 is
-part of BKG’s policy to help distributing this standard. RTCM may
+part of BKGâ€™s policy to help distributing this standard. RTCM may
 decide to issue further Ntrip versions as the need arises. Thus,
 it might be necessary to modify the Standard NtripCaster
 Version 0.1.5 in the future. Ntrip is already part of some GNSS
@@ -118,3 +118,22 @@ Contact and webpage
 The main webpage for Ntripcaster is "http://igs.bkg.bund.de/index_ntrip.htm".
 
 27 February 2008, "euref-ip@bkg.bund.de".
+
+
+-----add by mnltake
+CentOS install
+$ su
+$ yum update -y
+$ yum install git gcc nano
+$ git clone git@github.com:mnltake/ntripcaster.git
+$ cd ntripcaster/ntripcaster0.1.5/
+$ ./configue
+$ make
+$ make install
+$ cd usr/local/ntrincaster/conf
+$ nano ntripcaster.conf.dist
+-modify and save as ntripcaster.conf
+$ nano sourcetable.dat.dist
+-modify and save as sourcetable.dat
+$ cd  usr/local/ntrincaster/bin
+$ ./ntripcaster
