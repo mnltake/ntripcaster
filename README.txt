@@ -122,18 +122,18 @@ The main webpage for Ntripcaster is "http://igs.bkg.bund.de/index_ntrip.htm".
 
 -----add by mnltake
 CentOS install
-$ su
-$ yum update -y
-$ yum install git gcc nano
-$ git clone git@github.com:mnltake/ntripcaster.git
+
+$ sudo yum update -y
+$ sudo yum install git gcc nano
+$ git clone https://github.com/mnltake/ntripcaster.git
 $ cd ntripcaster/ntripcaster0.1.5/
 $ ./configue
 $ make
-$ make install
-$ cd usr/local/ntrincaster/conf
-$ nano ntripcaster.conf.dist
+$ sudo make install
+$ cd usr/local/ntripcaster/conf
+$ sudo nano ntripcaster.conf.dist
 -modify and save as ntripcaster.conf
-$ nano sourcetable.dat.dist
+$ sudo nano sourcetable.dat.dist
 -modify and save as sourcetable.dat
-$ cd  usr/local/ntrincaster/bin
+$ cd  usr/local/ntripcaster/bin
 $ ./ntripcaster
