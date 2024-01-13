@@ -137,3 +137,9 @@ $ sudo nano sourcetable.dat.dist
 -modify and save as sourcetable.dat
 $ cd  usr/local/ntripcaster/bin
 $ ./ntripcaster
+(auto start)
+$ cd ntripcaster/ntripcaster0.1.5/
+$ sudo chmod 755 ./ntripcaster.sh
+$ sudo mv ntripcaster.service /etc/systemd/system
+$ sudo systemctrl start ntripcaster.service
+$ sudo systemctrl enable ntripcaster.service
